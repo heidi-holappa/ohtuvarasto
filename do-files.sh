@@ -10,5 +10,5 @@ fi
 
 for i in $(seq 1 $files)
   do
-    touch file$i.txt
+    touch file$i.tmp
   done
