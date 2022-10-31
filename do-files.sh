@@ -8,7 +8,7 @@ if [ ${#*} -eq 0 ];
     exit
 fi
 
-for i in $(seq 1 $files)
+for i in $(seq 10 $files)
   do
-    touch file$i.tmp
+    touch file$i.txt
   done
