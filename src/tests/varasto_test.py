@@ -64,7 +64,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(8)
         result = self.varasto.ota_varastosta(10)
         self.assertAlmostEqual(result, 8)
-    
+
     def test_saldoa_suuremman_maaran_ottaminen_nollaa_saldon(self):
         self.varasto.lisaa_varastoon(8)
         self.varasto.ota_varastosta(10)
@@ -72,6 +72,5 @@ class TestVarasto(unittest.TestCase):
 
     def test_str_on_halutussa_muodossa(self):
         syote = self.varasto
-        tulisi_olla = "saldo = 0, vielä tilaa 10"
+        tulisi_olla = "saldo = 0.0, vielä tilaa 10.0"
         self.assertEqual(str(syote), tulisi_olla)
-    
